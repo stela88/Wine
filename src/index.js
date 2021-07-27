@@ -1,6 +1,7 @@
 import express from 'express';
 import storage from './memory_storage.js';
 import cors from 'cors';
+import connect from "./db.js"
 
 const app = express(); // instanciranje aplikacije
 const port = 3330; // port na kojem će web server slušati
@@ -12,13 +13,12 @@ app.get('/', (req, res) => {
     res.json({});
 });
 
-
 app.get("/artikli", (req, res) => {
     let artikli = storage.artikl
     res.json(artikli)
 });
 
-app.get("/pocetna", (req, res) => {
+app.get("/pocetna_memory", (req, res) => {
     let pocetna = storage.pocetna
     res.json(pocetna)
 });

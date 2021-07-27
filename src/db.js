@@ -7,8 +7,14 @@ let client = new mongo.MongoClient(connection_string, {
     useUnifiedTopology: true
 })
 
+let db = null
+
 export default () => {
     return new Promise((resolve, reject) => {
+
+        if (db && client.isConnected()) {
+            resolve(db)
+        }
 
         client.connect(err => {
             if (err) {
@@ -16,7 +22,8 @@ export default () => {
             }
             else {
                 console.log("Uspješno spajanje na bazu");
-                let db = client.db("")
+                db = client.db("Wine")
+                resolve(db)
             }
         })
     })
