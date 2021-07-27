@@ -27,7 +27,7 @@ let storage = {
     },
   ],
 
-  pocetna: [
+  posts: [
     {
       slika: ("@/assets/malvazija.jpg"),
       ime: "Malvazija",
@@ -129,6 +129,7 @@ let storage = {
         }
       ]
     },
+    
 
     {
       broj_narudžbe: 8458457,
@@ -173,4 +174,5 @@ let storage = {
     },
   ]
 }
+
 export default storage;

@@ -13,14 +13,25 @@ app.get('/', (req, res) => {
     res.json({});
 });
 
+app.get('/posts', async (req, res) => {
+    let db = await connect()    
+
+    let cursor = await db.collection("posts").find()
+    //.sort({"parametre poredaj po:..."})
+    
+    let results = await cursor.toArray()
+
+    res.json(results)
+});
+
 app.get("/artikli", (req, res) => {
     let artikli = storage.artikl
     res.json(artikli)
 });
 
-app.get("/pocetna_memory", (req, res) => {
-    let pocetna = storage.pocetna
-    res.json(pocetna)
+app.get("/posts_memory", (req, res) => {
+    let posts = storage.posts
+    res.json(posts)
 });
 
 
