@@ -2,6 +2,7 @@ import express from 'express';
 import storage from './memory_storage.js';
 import cors from 'cors';
 import connect from "./db.js"
+import mongo from "mongodb"
 
 const app = express(); // instanciranje aplikacije
 const port = 3330; // port na kojem će web server slušati
@@ -12,6 +13,17 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.json({});
 });
+
+
+//dohvat samo jednog elementa preko njegovog id-a preko monga
+app.get('/posts/:id', async (req, res) => {
+    let id = req.params.id
+    let db = await connect();
+
+    let doc = await db.collection("posts").findOne({_id: mongo.ObjectId(id)})
+
+    res.json(doc)
+})
 
 app.get('/posts', async (req, res) => {
     let db = await connect()   //pristup db objektu
