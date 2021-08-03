@@ -25,6 +25,6 @@ export default () => {
                 db = client.db("Wine")
                 resolve(db)
             }
-        })
-    })
+        });
+    });
 }

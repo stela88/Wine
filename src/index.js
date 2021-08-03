@@ -14,15 +14,27 @@ app.get('/', (req, res) => {
 });
 
 app.get('/posts', async (req, res) => {
-    let db = await connect()    
-
-    let cursor = await db.collection("posts").find()
-    //.sort({"parametre poredaj po:..."})
+    let db = await connect()   //pristup db objektu
+    let query = req.query; //parametri kojij se nalaze iza upitnika
     
+
+    let selekcija = {}
+    if(query.ime){
+        selekcija.ime = query.ime//pretražujemo po imenu
+    }//ako ime postoji
+    
+    console.log("Selekcija", selekcija)
+
+   // let cursor = await db.collection("posts").find(selekcija) ukoliko želimo pretraživat po gore navedenoj 
+   //selekciji preko imena, u postmanu se nakon "posts" dodaje ?ime=Teran i izbacuje nam samo Teran
+   let cursor = await db.collection("posts").find()
+    //.sort({"parametre poredaj po:..."})
+
     let results = await cursor.toArray()
 
     res.json(results)
 });
+
 
 app.get("/artikli", (req, res) => {
     let artikli = storage.artikl

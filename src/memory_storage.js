@@ -44,7 +44,7 @@ let storage = {
       stranica: "/Brut",
     },
     {
-      slika: ("@/assets/merlot.jpg"),
+      slika: "https://www.vivat-finavina.hr/wp-content/uploads/2020/05/1VN3276.jpg",
       ime: "Merlot",
       stranica: "/Merlot",
     },
@@ -129,7 +129,7 @@ let storage = {
         }
       ]
     },
-    
+
 
     {
       broj_narudžbe: 8458457,
