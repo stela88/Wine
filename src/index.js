@@ -1,8 +1,9 @@
 import express from 'express';
 import storage from './memory_storage.js';
 import cors from 'cors';
-import connect from "./db.js"
 import mongo from "mongodb"
+import connect from "./db.js"
+
 
 const app = express(); // instanciranje aplikacije
 const port = 3330; // port na kojem će web server slušati
@@ -14,22 +15,19 @@ app.get('/', (req, res) => {
     res.json({});
 });
 
+//dohvat samo jednog elementa preko njegovog id-a preko monga, neće mi trebati ali neka stoji tu
+// app.get('/posts/:id', async (req, res) => {
+//     let id = req.params.id
+//     let db = await connect();
 
-//dohvat samo jednog elementa preko njegovog id-a preko monga
-app.get('/posts/:id', async (req, res) => {
-    let id = req.params.id
-    let db = await connect();
-
-    let doc = await db.collection("posts").findOne({_id: mongo.ObjectId(id)})
-
-    res.json(doc)
-})
+//     let doc = await db.collection("posts").findOne({_id: mongo.ObjectId(id)})
+//     res.json(doc)
+// })
 
 app.get('/posts', async (req, res) => {
     let db = await connect()   //pristup db objektu
     let query = req.query; //parametri kojij se nalaze iza upitnika
     
-
     let selekcija = {}
     if(query.ime){
         selekcija.ime = query.ime//pretražujemo po imenu
@@ -47,6 +45,15 @@ app.get('/posts', async (req, res) => {
     res.json(results)
 });
 
+app.get('/malvazija', async (req, res) => {
+    let db = await connect()  
+    let query = req.query;
+
+    let cursor = await db.collection("malvazija").find()
+    let results = await cursor.toArray()
+
+    res.json(results)
+});
 
 app.get("/artikli", (req, res) => {
     let artikli = storage.artikl

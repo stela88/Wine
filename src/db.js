@@ -15,16 +15,19 @@ export default () => {
         if (db && client.isConnected()) {
             resolve(db)
         }
-
-        client.connect(err => {
-            if (err) {
-                reject("Došlo je do greške prilikom spajanja: " + err)
+            else{
+                client.connect(err => {
+                    if (err) {
+                        reject("Došlo je do greške prilikom spajanja: " + err)
+                    }
+                        else {
+                            console.log("Uspješno spajanje na bazu");
+                            db = client.db("Wine")
+                            resolve(db)
+                        }
+                });
             }
-            else {
-                console.log("Uspješno spajanje na bazu");
-                db = client.db("Wine")
-                resolve(db)
-            }
-        });
     });
 }
+
+console.log(client.isConnected)
