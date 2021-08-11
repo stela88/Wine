@@ -77,6 +77,26 @@ let storage = {
         "link2": "http://www.visitopatija.net/hr/gastronomija/kvarnerski-skamp",
         "link3": "https://www.spar.hr/dobar-tek/recepti/predjela/kamenicerockefeller",
       },
+    ] ,
+    
+    merlot:[
+      {
+        "logo": "https://i.ibb.co/SyjKDPn/1200px-WINE-Logo-svg.png",
+        "name": "MERLOT",
+        "img":  "https://i.ibb.co/b141HMr/merlot-crna.jpg",
+        "color": "crno",
+        "temp": "16-18 C",
+        "price": "40 Kn",
+        "about": "Duboke rubin crvene boje, bistro i gusto s živahnim refleksijama. Kompleksnog aromatskog profila, izraženih mirisa maline i borovnice, ljubičice. Začinskih nota crvenog papra i aromatskog bilja poput ružmarina i kadulje. Na nepcu je izrazito mekano, gotovo mesnato, i sočno. Prilično trajno i ukusno.",
+        "serve": "uz teleća jetra na žaru, pečena pačja prsa s crvenim zeljem te sirevi poput stiltona i gorgonzole.",
+        "meal1": "https://i.ibb.co/0ZVQxS9/jelo1-merlot.jpg",
+        "meal2": "https://i.ibb.co/1Tq5Vrt/jelo2-merlot.jpg",
+        "meal3": "https://i.ibb.co/XZb5wSH/jelo3-merlot.webp",
+        "link1": "https://www.coolinarika.com/recept/teleca-jetrica-0655bfb8-638b-11eb-9ca9-0242ac120018",
+        "link2": "https://www.svakodnevno.me/2018/05/21/pacja-prsa-na-slatkom-crvenom-kupusu/",
+        "link3": "https://www.coolinarika.com/namirnica/gorgonzola-4048a4d0-610e-11eb-89ca-0242ac120023",
+      },
+
     ]    
 
 }

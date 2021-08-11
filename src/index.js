@@ -65,6 +65,16 @@ app.get('/rose', async (req, res) => {
     res.json(results)
 });
 
+app.get('/merlot', async (req, res) => {
+    let db = await connect()  
+    let query = req.query;
+
+    let cursor = await db.collection("merlot").find()
+    let results = await cursor.toArray()
+
+    res.json(results)
+});
+
 app.get('/brut', async (req, res) => {
     let db = await connect()  
     let query = req.query;
