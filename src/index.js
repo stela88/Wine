@@ -85,6 +85,26 @@ app.get('/brut', async (req, res) => {
     res.json(results)
 });
 
+app.get('/chardonnay', async (req, res) => {
+    let db = await connect()  
+    let query = req.query;
+
+    let cursor = await db.collection("chardonnay").find()
+    let results = await cursor.toArray()
+
+    res.json(results)
+});
+
+app.get('/teran', async (req, res) => {
+    let db = await connect()  
+    let query = req.query;
+
+    let cursor = await db.collection("teran").find()
+    let results = await cursor.toArray()
+
+    res.json(results)
+});
+
 app.get("/artikli", (req, res) => {
     let artikli = storage.artikl
     res.json(artikli)

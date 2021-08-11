@@ -97,7 +97,28 @@ let storage = {
         "link3": "https://www.coolinarika.com/namirnica/gorgonzola-4048a4d0-610e-11eb-89ca-0242ac120023",
       },
 
-    ]    
+    ],  
+  
+    chardonnay:[
+      {
+        "logo": "https://i.ibb.co/SyjKDPn/1200px-WINE-Logo-svg.png",
+        "name": "CHARDONNAY",
+        "img":  "https://i.ibb.co/x2KyFQy/chardonnay-crna.jpg",
+        "color": "bijelo",
+        "temp": "6-8 C",
+        "price": "40 Kn",
+        "about": "Vino je kristalno bistro, duboke slamnato žute boje, s nijansom mladog zlata. Izraženog i finog mirisa žute jabuke, irisa te egzotičnih nota dinje, limete i ličija. Na nepcu je zaobljeno i mekano, gotovo slano, vrlo ekstraktno a tendecijom slatkoće.",
+        "serve": "Kapesante na žaru, tjestenina s plodovima mora, file bijele ribe pečen u tavici s pečenim povrćem.",
+        "meal1": "https://i.ibb.co/J20w57j/jelo1-chardonnay.jpg",
+        "meal2": "https://i.ibb.co/425BqX1/jelo2-chardonnay.jpg",
+        "meal3": "https://i.ibb.co/jZJJ9yZ/jelo3-chardonnay.jpg",
+        "link1": "https://gastro.24sata.hr/recepti/kapesante-naturale-15690",
+        "link2": "https://www.podravka.hr/recept/e1eacd8a-6182-11eb-abf0-0242ac120018/zapecena-tjestenina-s-plodovima-mora/",
+        "link3": "https://www.coolinarika.com/recept/fritaja-sa-sparogama-90ee9558-6388-11eb-946d-0242ac12002d",
+      },
+      
+
+    ], 
 
 }
 export default storage;
