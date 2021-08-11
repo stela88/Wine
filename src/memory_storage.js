@@ -60,25 +60,24 @@ let storage = {
     },
   ],
 
-  rose: [
-    // {
-    //   "logo": 
-    //   "name": 
-    //   "img": 
-    //   "color":
-    //   "temp": 
-    //   "price": 
-    //   "about":
-    //   "serve": 
-    //   "meal1": 
-    //   "meal2": 
-    //   "meal3": 
-    //   "link1": 
-    //   "link2": 
-    //   "link3": 
-    // },
+    brut:[
+      {
+        "logo": "https://i.ibb.co/SyjKDPn/1200px-WINE-Logo-svg.png",
+        "name": "BRUT",
+        "img":  "https://i.ibb.co/rm8yKvh/brut-crna.jpg",
+        "color": "bijelo",
+        "temp": "5-7 C",
+        "price": "50 Kn",
+        "about": "Vino je sjajne, slamnato žute boje s blagim zelenkastim odsjajem, vrlo živahnih refleksija. Mjehurići su sitni, brojni i postojani, kako u čaši tako i na nepcu. Svježeg je aromatskog profila, po poljskom cvijeću, bijeloj vinogradarskoj breskvi i limeti. Na nepcu je izrazito svježe i mekano. Sirupastog i trajnog okusa.",
+        "serve": "Finger food i hladna riblja predjela: sirovi kvarnerski škampi, sirove kamenice s vinaigrettom od zelene jabuke.",
+        "meal1": "https://i.ibb.co/zNBKpZ1/jelo1-brut.webp",
+        "meal2": "https://i.ibb.co/JHJTq24/jelo2-brut.jpg",
+        "meal3": "https://i.ibb.co/nn4snLX/jelo3-brut.jpg",
+        "link1": "https://www.coolinarika.com/inspiracija/finger-food-c6f308e6-610d-11eb-bdf1-0242ac120034",
+        "link2": "http://www.visitopatija.net/hr/gastronomija/kvarnerski-skamp",
+        "link3": "https://www.spar.hr/dobar-tek/recepti/predjela/kamenicerockefeller",
+      },
+    ]    
 
-    
-  ], 
 }
 export default storage;
