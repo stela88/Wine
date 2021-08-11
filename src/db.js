@@ -1,6 +1,6 @@
 import mongo from "mongodb"
 
-let connection_string = "mongodb+srv://Admin:dosadno810@cluster0.v7dlb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+let connection_string = "mongodb+srv://Admin:admin@cluster0.v7dlb.mongodb.net/Wine?retryWrites=true&w=majority";
 
 let client = new mongo.MongoClient(connection_string, {
     useNewUrlParser: true,

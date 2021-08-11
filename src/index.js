@@ -11,9 +11,9 @@ const port = 3330; // port na kojem će web server slušati
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.json({});
-});
+// app.get('/', (req, res) => {
+//     res.json({});
+// });
 
 //dohvat samo jednog elementa preko njegovog id-a preko monga, neće mi trebati ali neka stoji tu
 // app.get('/posts/:id', async (req, res) => {
@@ -50,6 +50,16 @@ app.get('/malvazija', async (req, res) => {
     let query = req.query;
 
     let cursor = await db.collection("malvazija").find()
+    let results = await cursor.toArray()
+
+    res.json(results)
+});
+
+app.get('/rose', async (req, res) => {
+    let db = await connect()  
+    let query = req.query;
+
+    let cursor = await db.collection("rose").find()
     let results = await cursor.toArray()
 
     res.json(results)
