@@ -60,8 +60,8 @@ let storage = {
     },
   ],
 
-    brut:[
-      {
+  brut:[
+    {
         "logo": "https://i.ibb.co/SyjKDPn/1200px-WINE-Logo-svg.png",
         "name": "BRUT",
         "img":  "https://i.ibb.co/rm8yKvh/brut-crna.jpg",
@@ -115,6 +115,27 @@ let storage = {
         "link1": "https://gastro.24sata.hr/recepti/kapesante-naturale-15690",
         "link2": "https://www.podravka.hr/recept/e1eacd8a-6182-11eb-abf0-0242ac120018/zapecena-tjestenina-s-plodovima-mora/",
         "link3": "https://www.coolinarika.com/recept/fritaja-sa-sparogama-90ee9558-6388-11eb-946d-0242ac12002d",
+      },
+      
+
+    ], 
+
+    teran:[
+      {
+        "logo": "https://i.ibb.co/SyjKDPn/1200px-WINE-Logo-svg.png",
+        "name": "TERAN",
+        "img":  "https://i.ibb.co/yRmkLNC/teran-crna.jpg",
+        "color": "crno",
+        "temp": "16-18 C",
+        "price": "40 Kn",
+        "about": "Vino je bistro, duboke rubin crvene boje, živahnih refleksija i prilično je gusto. Finih i izraženih mirisa crvene ruže, višnje, šljive i borovnice. Svježe, baršunasto mekano, ukusno i trajno na nepcu.",
+        "serve": "Istarski pršut, tuna steak ili domaće kobasice na žaru.",
+        "meal1": "https://i.ibb.co/17Gw558/jelo1-teran.jpg",
+        "meal2": "https://i.ibb.co/PQNM83m/jelo2-teran.jpg",
+        "meal3": "https://i.ibb.co/7rLMyQS/Grilled-sausage-with-fresh-rosemary-on-hot-barbecue-dish.jpg",
+        "link1": "https://gastro.24sata.hr/spajza/znanstvenici-o-kakvoci-istarskih-drniskih-i-dalmatinskih-prsuta-10921",
+        "link2": "https://gastro.24sata.hr/trikovi-za-savrsen-tuna-steak-9021",
+        "link3": "https://www.jutarnji.hr/dobrahrana/price/kobaje-na-rostilju-evo-kako-rostiljati-omiljene-debeljuce-4070343",
       },
       
 
