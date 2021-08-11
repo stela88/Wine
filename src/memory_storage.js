@@ -41,43 +41,43 @@ let storage = {
   ],
 
 
-  malvazija: [
-    {
-      logo: "@/assets/logo2.png",
-      name: "MALVAZIJA",
-      img: "@/assets/malvazija_crna.jpg",
-      color: "bijelo",
-      temp: "6-8 C",
-      price: "40 Kn",
-      about: "Vino je žive, slamnato žute boje s nježnom zelenkastom nijansom. Kompleksnih aroma; cvijeta akacije, limuna, zrele breskve i manga. Na nepcu je veoma svježe i mekano, elegantnog i trajnog okusa. Na retro okusu, prisutna blaga gorčina zelenog badema.",
-      serve: "Carpaccio od brancina sa limunom, rukolom, bijelim paprom i cvijetom soli, rižoto s kozicama i tikvicama, fritaja sa šparugama i pancetom",
-      meal1: "@/assets/jelo1_malvazija.jpg",
-      meal2: "@/assets/jelo2_malvazija.jpg",
-      meal3: "@/assets/jelo3_malvazija.jpg",
-      link1: "https://cromaris.com/hr/recept/carpaccio-od-velikog-brancina/",
-      link2: "https://www.coolinarika.com/recept/rizoto-s-tikvicama-i-kozicama-b9a0aafe-6446-11eb-9714-0242ac120062",
-      link3: "https://www.coolinarika.com/recept/fritaja-sa-sparogama-90ee9558-6388-11eb-946d-0242ac12002d",
-    },
-  ],
-
-  brut:[
-    {
-        "logo": "https://i.ibb.co/SyjKDPn/1200px-WINE-Logo-svg.png",
-        "name": "BRUT",
-        "img":  "https://i.ibb.co/rm8yKvh/brut-crna.jpg",
-        "color": "bijelo",
-        "temp": "5-7 C",
-        "price": "50 Kn",
-        "about": "Vino je sjajne, slamnato žute boje s blagim zelenkastim odsjajem, vrlo živahnih refleksija. Mjehurići su sitni, brojni i postojani, kako u čaši tako i na nepcu. Svježeg je aromatskog profila, po poljskom cvijeću, bijeloj vinogradarskoj breskvi i limeti. Na nepcu je izrazito svježe i mekano. Sirupastog i trajnog okusa.",
-        "serve": "Finger food i hladna riblja predjela: sirovi kvarnerski škampi, sirove kamenice s vinaigrettom od zelene jabuke.",
-        "meal1": "https://i.ibb.co/zNBKpZ1/jelo1-brut.webp",
-        "meal2": "https://i.ibb.co/JHJTq24/jelo2-brut.jpg",
-        "meal3": "https://i.ibb.co/nn4snLX/jelo3-brut.jpg",
-        "link1": "https://www.coolinarika.com/inspiracija/finger-food-c6f308e6-610d-11eb-bdf1-0242ac120034",
-        "link2": "http://www.visitopatija.net/hr/gastronomija/kvarnerski-skamp",
-        "link3": "https://www.spar.hr/dobar-tek/recepti/predjela/kamenicerockefeller",
+    malvazija: [
+      {
+        logo: "@/assets/logo2.png",
+        name: "MALVAZIJA",
+        img: "@/assets/malvazija_crna.jpg",
+        color: "bijelo",
+        temp: "6-8 C",
+        price: "40 Kn",
+        about: "Vino je žive, slamnato žute boje s nježnom zelenkastom nijansom. Kompleksnih aroma; cvijeta akacije, limuna, zrele breskve i manga. Na nepcu je veoma svježe i mekano, elegantnog i trajnog okusa. Na retro okusu, prisutna blaga gorčina zelenog badema.",
+        serve: "Carpaccio od brancina sa limunom, rukolom, bijelim paprom i cvijetom soli, rižoto s kozicama i tikvicama, fritaja sa šparugama i pancetom",
+        meal1: "@/assets/jelo1_malvazija.jpg",
+        meal2: "@/assets/jelo2_malvazija.jpg",
+        meal3: "@/assets/jelo3_malvazija.jpg",
+        link1: "https://cromaris.com/hr/recept/carpaccio-od-velikog-brancina/",
+        link2: "https://www.coolinarika.com/recept/rizoto-s-tikvicama-i-kozicama-b9a0aafe-6446-11eb-9714-0242ac120062",
+        link3: "https://www.coolinarika.com/recept/fritaja-sa-sparogama-90ee9558-6388-11eb-946d-0242ac12002d",
       },
-    ] ,
+    ],
+
+    brut:[
+        {
+          "logo": "https://i.ibb.co/SyjKDPn/1200px-WINE-Logo-svg.png",
+          "name": "BRUT",
+          "img":  "https://i.ibb.co/rm8yKvh/brut-crna.jpg",
+          "color": "bijelo",
+          "temp": "5-7 C",
+          "price": "50 Kn",
+          "about": "Vino je sjajne, slamnato žute boje s blagim zelenkastim odsjajem, vrlo živahnih refleksija. Mjehurići su sitni, brojni i postojani, kako u čaši tako i na nepcu. Svježeg je aromatskog profila, po poljskom cvijeću, bijeloj vinogradarskoj breskvi i limeti. Na nepcu je izrazito svježe i mekano. Sirupastog i trajnog okusa.",
+          "serve": "Finger food i hladna riblja predjela: sirovi kvarnerski škampi, sirove kamenice s vinaigrettom od zelene jabuke.",
+          "meal1": "https://i.ibb.co/zNBKpZ1/jelo1-brut.webp",
+          "meal2": "https://i.ibb.co/JHJTq24/jelo2-brut.jpg",
+          "meal3": "https://i.ibb.co/nn4snLX/jelo3-brut.jpg",
+          "link1": "https://www.coolinarika.com/inspiracija/finger-food-c6f308e6-610d-11eb-bdf1-0242ac120034",
+          "link2": "http://www.visitopatija.net/hr/gastronomija/kvarnerski-skamp",
+          "link3": "https://www.spar.hr/dobar-tek/recepti/predjela/kamenicerockefeller",
+        },
+      ] ,
     
     merlot:[
       {
@@ -96,7 +96,6 @@ let storage = {
         "link2": "https://www.svakodnevno.me/2018/05/21/pacja-prsa-na-slatkom-crvenom-kupusu/",
         "link3": "https://www.coolinarika.com/namirnica/gorgonzola-4048a4d0-610e-11eb-89ca-0242ac120023",
       },
-
     ],  
   
     chardonnay:[
@@ -116,8 +115,6 @@ let storage = {
         "link2": "https://www.podravka.hr/recept/e1eacd8a-6182-11eb-abf0-0242ac120018/zapecena-tjestenina-s-plodovima-mora/",
         "link3": "https://www.coolinarika.com/recept/fritaja-sa-sparogama-90ee9558-6388-11eb-946d-0242ac12002d",
       },
-      
-
     ], 
 
     teran:[
@@ -137,8 +134,25 @@ let storage = {
         "link2": "https://gastro.24sata.hr/trikovi-za-savrsen-tuna-steak-9021",
         "link3": "https://www.jutarnji.hr/dobrahrana/price/kobaje-na-rostilju-evo-kako-rostiljati-omiljene-debeljuce-4070343",
       },
-      
+    ], 
 
+    cabernet_sauvignon:[
+      {
+        "logo": "https://i.ibb.co/SyjKDPn/1200px-WINE-Logo-svg.png",
+        "name": "CABERNET SAUVIGNON",
+        "img":  "https://i.ibb.co/mDjBSLq/cabernet-sauvignon-crna.jpg",
+        "color": "bijelo",
+        "temp": "16-18 C",
+        "price": "40 Kn",
+        "about": "Duboke, rubin crvene boje s granatnim odsjajem. Bistro i gusto, zagasitih refleksija. slatkastih nota, zrelog crnog bobičastog voća, poput marmelade od crnog ribiza. Začinskih nota crnog papra, timjana i rogača. Na nepcu je mekano, svježe i trajno. Blagih zrelih tanina trajnog okusa.",
+        "serve": "Gulaš od vepra s njokima ili juneću potrbušinu na žaru i pačja prsa s aronijom.",
+        "meal1": "https://i.ibb.co/FBY3k9Z/jelo1-cabernet-sauvignon.jpg",
+        "meal2": "https://i.ibb.co/SwLPRY1/jelo2-cabernet-sauvignon.jpg",
+        "meal3": "https://i.ibb.co/2v8V1vh/jelo3-cabernet-sauvignon.webp",
+        "link1": "https://finirecepti.net.hr/priprema/gulas-od-vepra-na-istarski-nacin/",
+        "link2": "https://gastro.24sata.hr/recepti/flank-steak-na-grillu-nepravedno-zanemaren-komad-junetine-23559",
+        "link3": "https://www.coolinarika.com/recept/pacja-prsa-s-aronijom-d748f712-6182-11eb-b558-0242ac120046",
+      },
     ], 
 
 }

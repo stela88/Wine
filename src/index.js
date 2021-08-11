@@ -105,6 +105,16 @@ app.get('/teran', async (req, res) => {
     res.json(results)
 });
 
+app.get('/cabernet_sauvignon', async (req, res) => {
+    let db = await connect()  
+    let query = req.query;
+
+    let cursor = await db.collection("cabernet_sauvignon").find()
+    let results = await cursor.toArray()
+
+    res.json(results)
+});
+
 app.get("/artikli", (req, res) => {
     let artikli = storage.artikl
     res.json(artikli)
