@@ -125,17 +125,15 @@ app.get('/posts/bijelo', async (req, res) => {
     res.json(results)
 });
 
-//     await db.collection("posts").findOne({_id: mongo.ObjectId(id)})
-//     res.json(doc)
+app.get('/posts/crno', async (req, res) => {
+    let db = await connect()  
+    let query = req.query;
 
+    let cursor = await db.collection("posts").find({boja: "crno"})
+    let results = await cursor.toArray()
 
-
-
-// app.get('/artikli', (req, res) => { // sa upitnikom dodajemo nove neke filtere, parametre, ...
-//     let parametri = req.query;
-
-//     res.json(storage.artikl.filter((x) => (x.boja == parametri.boja && x.naziv == parametri.naziv))); // mongo upit
-// });
+    res.json(results)
+});
 
 
 //unos nove narudžbe
