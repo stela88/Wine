@@ -115,21 +115,21 @@ app.get('/cabernet_sauvignon', async (req, res) => {
     res.json(results)
 });
 
-app.get("/artikli", (req, res) => {
-    let artikli = storage.artikl
-    res.json(artikli)
+app.get('/posts/bijelo', async (req, res) => {
+    let db = await connect()  
+    let query = req.query;
+
+    let cursor = await db.collection("posts").find({boja: "bijelo"})
+    let results = await cursor.toArray()
+
+    res.json(results)
 });
 
-app.get("/posts_memory", (req, res) => {
-    let posts = storage.posts
-    res.json(posts)
-});
+//     await db.collection("posts").findOne({_id: mongo.ObjectId(id)})
+//     res.json(doc)
 
 
-// lista svih korisnika - nije baš nešto što će ti trebati (jedino za neku administraciju)
-// app.get('/users', (req, res) => {
-//     res.json(storage.user);
-// });
+
 
 // app.get('/artikli', (req, res) => { // sa upitnikom dodajemo nove neke filtere, parametre, ...
 //     let parametri = req.query;
@@ -137,10 +137,6 @@ app.get("/posts_memory", (req, res) => {
 //     res.json(storage.artikl.filter((x) => (x.boja == parametri.boja && x.naziv == parametri.naziv))); // mongo upit
 // });
 
-//lista narudžbi
-app.get('/orders', (req, res) => {
-    res.json(storage.orders);
-});
 
 //unos nove narudžbe
 app.post('/orders', (req, res) => {
