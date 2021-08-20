@@ -145,6 +145,16 @@ app.get('/posts/rose', async (req, res) => {
     res.json(results)
 });
 
+app.get('/posts/temp1', async (req, res) => {
+    let db = await connect()  
+    let query = req.query;
+
+    let cursor = await db.collection("posts").find({temperatura: "5-7 C"})
+    let results = await cursor.toArray()
+
+    res.json(results)
+});
+
 
 //unos nove narudžbe
 app.post('/orders', (req, res) => {
