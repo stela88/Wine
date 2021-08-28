@@ -8,6 +8,7 @@ import connect from "./db.js"
 const app = express(); // instanciranje aplikacije
 const port = 3330; // port na kojem će web server slušati
 
+
 app.use(cors());
 app.use(express.json());
 
@@ -23,6 +24,26 @@ app.use(express.json());
 //     let doc = await db.collection("posts").findOne({_id: mongo.ObjectId(id)})
 //     res.json(doc)
 // })
+
+app.post('/narudzbe', async (req, res) => {
+
+    let data = req.body;
+    let db = await connect();
+    let result = await db.collection('placanje').insert(data);
+
+    if (result ) {
+        res.json({ result, status: "OK" });
+    } else{
+        res.json({ status: "FAIL"});
+    }
+    
+    // let db = await connect()  
+    // .then(function(db) {
+    //     delete req.body._id; // for safety reasons
+    //     db.collection('placanje').insertOne(req.body);
+    // });    
+    // res.send('Data received:\n' + JSON.stringify(req.body));
+});
 
 app.get('/posts', async (req, res) => {
     let db = await connect()   //pristup db objektu
